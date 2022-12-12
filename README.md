@@ -56,7 +56,7 @@ npx cypress run
 ### Boa sorte!!!
 <br>
 
-# Requisitos Obrigatórios
+# Requisitos do projeto
 
 ## 1. Implementa o `Header` de sua pagina.
 
@@ -200,5 +200,27 @@ npx cypress run
 - A primeira cor inicialmente deve possuir a classe `selected`.
 - Ao clicar em uma cor, o elemento que tinha a classe `selected` deve perder a classe.
 - A cor clicada deve receber a classe `selected`.
+
+</details><br>
+
+## 8. Crie um `quadro` para ser pintado.
+
+<details>
+  <summary>
+  Crie um quadro para que futuramente receba as cores da paleta.
+  </summary> <br />
+
+- Crie uma div com o id `board` que seja filho do elemento que tenha o id `app`.
+- Dê a essa div uma `borda solida preta de 3px`.
+- De a essa div uma `largura de 400px`.
+- De a essa div uma `altura de 200px`.
+- Dê inicialmente o background `branco` pra essa div.
+
+**O que será testado:**
+
+- A div deve possuir a classe `board` e ser filho de `app`.
+- A div deve possuir uma `borda solida preta de 3px`..
+- A div deve ter 400px de `largura` e 200px de `altura`.
+- A div deve ter um background `branco` inicialmente.
 
 </details><br>
