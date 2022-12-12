@@ -102,3 +102,20 @@ npx cypress run
 - A segunda e a última div deve conter um `border-radius` de 50%.
 
 </details><br>
+
+## 3. Alinhe e centralize sua `Paleta`.
+
+<details>
+  <summary>
+  Usando manipulação do DOM para definir estilos, alinhe lado a lado e centralize sua paleta.
+  </summary> <br />
+
+- Usando o `display: flex`, alinhe lado a lado sua paleta.
+- Usando o `justify-content: center`, centralize sua paleta.
+
+
+**O que será testado:**
+
+- Verificará se sua paleta está alinhada lado a lado e está no centro da tela.
+
+</details><br>
