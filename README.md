@@ -139,3 +139,27 @@ npx cypress run
 - Nenhuma cor pode ser da cor branco absoluto.
 
 </details><br>
+
+## 5. Crie um `botão` para criar novas cores aleatórias.
+
+<details>
+  <summary>
+  Implementa um botão na sua página que ao clicado, atualizará a paleta de cores.
+  </summary> <br />
+
+- Crie uma nova `div`.
+- Utilize `display flex` e `justify-content: center` nessa div.
+- Crie um botão com o id `new-colors` e o coloque como filho dessa nova div.
+- Dê a esse botão o texto `Gerar cores`.
+- Ao ser clicado, esse botão deverá gerar novas cores aleatórias para a paleta.
+- A última cor deve permanecer `preta`.
+
+**O que será testado:**
+
+- Verificará se existe um botão no centro da tela com o id `new-colors`.
+- Verificará se o botão contem o texto `Gerar cores`.
+- Ao ser clicado, deverá gerar novas cores aleatórias para paleta.
+- A última cor deve permanecer `preta`.
+- Não será permitido as cores serem exatamentes as mesmas da paleta anterior.
+
+</details><br>
