@@ -32,7 +32,39 @@ const createPallete = () => {
   getApp.appendChild(createDiv);
 };
 
+const randomColour = () => {
+  const random = Math.floor(Math.random() * 16777215).toString(16);
+  return `#${random}`;
+};
+
+const paintPallete = () => {
+  const pallete = document.querySelectorAll('.color');
+  for (let i = 0; i < pallete.length; i += 1) {
+    if (i === pallete.length - 1) {
+      pallete[i].style.backgroundColor = 'black';
+    } else {
+      pallete[i].style.backgroundColor = randomColour();
+    }
+  }
+};
+
+const createtButton = () => {
+  const createDiv = document.createElement('div');
+  createDiv.style.display = 'flex';
+  createDiv.style.justifyContent = 'center';
+  const createButton = document.createElement('button');
+  createButton.innerText = 'Gerar cores';
+  createButton.id = 'new-colors';
+  createDiv.appendChild(createButton);
+  getApp.appendChild(createDiv);
+};
+
 window.onload = () => {
   createHeader();
   createPallete();
+  paintPallete();
+  createtButton();
+
+  const button = document.querySelector('#new-colors');
+  button.addEventListener('click', paintPallete);
 };
