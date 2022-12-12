@@ -257,3 +257,17 @@ npx cypress run
 - Ao clicar no `quadro` e ele receber uma cor, ao recarregar a página a cor deve ser mantida.
 
 </details><br>
+
+# Requisito não avaliativo.
+
+## Estilize o projeto com o CSS comum.
+
+<details>
+  <summary>
+  Hora de estilizar o projeto com o CSS comum e deixá-lo bonito.
+  </summary> <br />
+
+- Estilize o projeto.
+- Poste no seu LinkedIn ou GitHub! =D
+
+</details><br>
