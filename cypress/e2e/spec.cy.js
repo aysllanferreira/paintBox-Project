@@ -70,6 +70,10 @@ describe('Req 04 - Verifica se as formas geometricas possuem cores distintas', (
     cy.get('#app > #pallete > .color').each(($el) => {
       cy.wrap($el).should('have.css', 'background-color');
     });
+    // Verify if background color is not empty
+    cy.get('#app > #pallete > .color').each(($el) => {
+      cy.wrap($el).should('not.have.css', 'background-color', 'rgba(0, 0, 0, 0)');
+    })
   });
 
   it('Verifica se todas as formas geometricas possuem cores diferente de branco', () => {
@@ -246,6 +250,8 @@ describe('Req 09 - Verifica se ao selecionar uma cor da paleta e clicar no board
 describe('Req 10 - Verifica o LocalStorage do Board', () => {
   it('Verifica se o LocalStorage possui a key board-color', () => {
     cy.visit('http://localhost:5173/');
+    cy.get('#app > #pallete > .color').last().click();
+    cy.get('#app > #board').click();
     cy.window().then((win) => {
       expect(win.localStorage.getItem('board-color')).to.not.be.null;
     });
