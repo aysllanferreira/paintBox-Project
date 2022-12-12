@@ -75,6 +75,9 @@ npx cypress run
 
 - Sua página deve conter um elemento h1 com o texto Paint Box como filho do elemento header.
 
+## Exemplo
+![Requisito 01](./readmeImg/Req01.png)
+
 </details><br>
 
 ## 2. Crie os elementos de sua `Paleta de cores`.
