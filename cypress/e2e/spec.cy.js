@@ -70,6 +70,10 @@ describe('Req 04 - Verifica se as formas geometricas possuem cores distintas', (
     cy.get('#app > #pallete > .color').each(($el) => {
       cy.wrap($el).should('have.css', 'background-color');
     });
+    // Verify if background color is not empty
+    cy.get('#app > #pallete > .color').each(($el) => {
+      cy.wrap($el).should('not.have.css', 'background-color', 'rgba(0, 0, 0, 0)');
+    })
   });
 
   it('Verifica se todas as formas geometricas possuem cores diferente de branco', () => {

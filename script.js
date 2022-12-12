@@ -26,6 +26,8 @@ const generatePallete = (div) => {
 const createPallete = () => {
   const createDiv = document.createElement('div');
   createDiv.id = 'pallete';
+  createDiv.style.display = 'flex';
+  createDiv.style.justifyContent = 'center';
   generatePallete(createDiv);
   getApp.appendChild(createDiv);
 };
