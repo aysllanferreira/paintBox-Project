@@ -1,3 +1,4 @@
+/* eslint-disable no-param-reassign */
 const getApp = document.querySelector('#app');
 
 const createHeader = () => {
@@ -110,6 +111,43 @@ const palleteEventListeners = () => {
   }
 };
 
+const createBoard = () => {
+  const createDiv = document.createElement('div');
+  createDiv.id = 'board';
+  createDiv.style.border = '3px solid black';
+  createDiv.style.width = '400px';
+  createDiv.style.height = '200px';
+  createDiv.style.backgroundColor = 'white';
+  getApp.appendChild(createDiv);
+};
+
+const saveBoardLocalStorage = () => {
+  const board = document.querySelector('#board');
+  const getBoardColor = board.style.backgroundColor;
+  saveLocalStorage('board-color', getBoardColor);
+};
+
+const paintBoard = ({ target }) => {
+  const pallete = document.querySelectorAll('.color');
+  for (let i = 0; i < pallete.length; i += 1) {
+    if (pallete[i].classList.contains('selected')) {
+      target.style.backgroundColor = pallete[i].style.backgroundColor;
+    }
+  }
+  saveBoardLocalStorage();
+};
+
+const paintBoardStorage = () => {
+  const board = document.querySelector('#board');
+  const boardStorage = localStorage.getItem('board-color');
+  board.style.backgroundColor = boardStorage;
+};
+
+const boardEventListener = () => {
+  const board = document.querySelector('#board');
+  board.addEventListener('click', paintBoard);
+};
+
 window.onload = () => {
   createHeader();
   createPallete();
@@ -120,4 +158,10 @@ window.onload = () => {
   button.addEventListener('click', paintPallete);
 
   palleteEventListeners();
+  createBoard();
+  boardEventListener();
+
+  if (localStorage.getItem('board-color') !== null) {
+    paintBoardStorage();
+  }
 };
