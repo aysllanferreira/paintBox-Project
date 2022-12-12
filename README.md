@@ -163,3 +163,22 @@ npx cypress run
 - Não será permitido as cores serem exatamentes as mesmas da paleta anterior.
 
 </details><br>
+
+## 6. Salve as cores da paleta no `LocalStorage`.
+
+<details>
+  <summary>
+  Salve as cores da paleta no `LocalStorage`.
+  </summary> <br />
+
+- Salve as cores da paleta no `LocalStorage` usando a chave `colors`.
+- Quando clicar no botão de gerar novas cores, as novas cores geradas também devem ser salvas.
+- Ao recarregar a página, as cores geradas devem permanecer as mesmas.
+
+**O que será testado:**
+
+- Verificará se as cores foram salvas no `LocalStorage` com a chave `colors`
+- Verificará se ao recarregar a página, as cores vão permanecer as mesmas.
+- Verificará se ao clicar no botão gerará novas cores e ao recarregar a página, as cores vão se manter.
+
+</details><br>
