@@ -1,4 +1,4 @@
-describe('Testa o Header', () => {
+describe('Req 01 - Testa o Header', () => {
   it('Verifica se tem o Header como filho da div com o id App', () => {
     cy.visit('http://localhost:5173/');
     cy.get('#app').should('be.visible');
@@ -11,7 +11,7 @@ describe('Testa o Header', () => {
   });
 });
 
-describe('Testa as formas geometricas', () => {
+describe('Req 02 - Testa as formas geometricas', () => {
   it('Verifica se tem os pallete como filho da div com o id App', () => {
     cy.visit('http://localhost:5173/');
     cy.get('#app').should('be.visible');
@@ -52,7 +52,7 @@ describe('Testa as formas geometricas', () => {
   });
 });
 
-describe('Verifica se as formas Geometricas usam FlexBox', () => {
+describe('Req 03 - Verifica se as formas Geometricas usam FlexBox', () => {
   it('Verifica se os pallete tem a propriedade display flex', () => {
     cy.visit('http://localhost:5173/');
     cy.get('#app > #pallete').should('have.css', 'display', 'flex');
@@ -69,7 +69,7 @@ describe('Verifica se as formas Geometricas usam FlexBox', () => {
   });
 });
 
-describe('Verifica se as formas geometricas possuem cores distintas', () => {
+describe('Req 04 - Verifica se as formas geometricas possuem cores distintas', () => {
   it('Verifica se todas as formas geometricas possuem cores definidas', () => {
     cy.visit('http://localhost:5173/');
     cy.get('#app > #pallete > .color').each(($el) => {
@@ -99,7 +99,7 @@ describe('Verifica se as formas geometricas possuem cores distintas', () => {
   });
 });
 
-describe('Verifica botao de gerar cores', () => {
+describe('Req 05 - Verifica botao de gerar cores', () => {
   it('Verifica se o botao de gerar cores existe', () => {
     cy.visit('http://localhost:5173/');
     cy.get('#new-colors').should('be.visible');
@@ -142,7 +142,7 @@ describe('Verifica botao de gerar cores', () => {
   });
 });
 
-describe('Verifica o LocalStorage da paleta', () => {
+describe('Req 06 - Verifica o LocalStorage da paleta', () => {
   it('Verifica se a chave do LocalStorage tem o nome de colors', () => {
     cy.visit('http://localhost:5173/');
     cy.window().then((win) => {
@@ -176,7 +176,7 @@ describe('Verifica o LocalStorage da paleta', () => {
   });
 });
 
-describe('Verifica se a classe Selected alterna entre a paleta', () => {
+describe('Req 07 - Verifica se a classe Selected alterna entre a paleta', () => {
   it('Verifica se a classe Selected existe', () => {
     cy.visit('http://localhost:5173/');
     cy.get('#app > #pallete > .color').first().should('have.class', 'selected');
@@ -201,7 +201,7 @@ describe('Verifica se a classe Selected alterna entre a paleta', () => {
   });
 });
 
-describe('Verifica o Board', () => {
+describe('Req 08 - Verifica o Board', () => {
   it('Verifica se a div com o id board existe', () => {
     cy.visit('http://localhost:5173/');
     cy.get('#app > #board').should('be.visible');
@@ -226,7 +226,7 @@ describe('Verifica o Board', () => {
   });
 });
 
-describe('Verifica se ao selecionar uma cor da paleta e clicar no board, ele muda a cor de fundo corretamente', () => {
+describe('Req 09 - Verifica se ao selecionar uma cor da paleta e clicar no board, ele muda a cor de fundo corretamente', () => {
   it('Verifica se ao selecionar uma cor e clicar no board, o board muda de cor', () => {
     cy.visit('http://localhost:5173/');
     // Seleciona a cor preta
@@ -248,7 +248,7 @@ describe('Verifica se ao selecionar uma cor da paleta e clicar no board, ele mud
   });
 });
 
-describe('Verifica o LocalStorage do Board', () => {
+describe('Req 10 - Verifica o LocalStorage do Board', () => {
   it('Verifica se o LocalStorage possui a key board-color', () => {
     cy.visit('http://localhost:5173/');
     cy.window().then((win) => {
