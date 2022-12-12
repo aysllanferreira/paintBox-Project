@@ -58,11 +58,6 @@ describe('Req 03 - Verifica se as formas Geometricas usam FlexBox', () => {
     cy.get('#app > #pallete').should('have.css', 'display', 'flex');
   });
 
-  it('Verifica se os pallete tem a propriedade flex-direction row', () => {
-    cy.visit('http://localhost:5173/');
-    cy.get('#app > #pallete').should('have.css', 'flex-direction', 'row');
-  });
-
   it('Verifica se os pallete estao no centro da tela', () => {
     cy.visit('http://localhost:5173/');
     cy.get('#app > #pallete').should('have.css', 'justify-content', 'center');
