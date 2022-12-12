@@ -3,3 +3,42 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  background-color: #191970;
+  font-family: Poppins, sans-serif;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 5rem;
+  font-size: 3rem;
+}
+
+#pallete {
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+button {
+  border-radius: 20px;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: #b24bf3;
+  color: white;
+  margin-bottom: 6rem;
+  border: none;
+}
+
+button:hover {
+  background-color: purple;
+}
+
+#board {
+  margin: 0 auto;
+  box-shadow: 0 0 30px 0 rgb(0 0 0 / 50%);
+}
