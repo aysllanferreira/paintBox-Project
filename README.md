@@ -119,3 +119,23 @@ npx cypress run
 - Verificará se sua paleta está alinhada lado a lado e está no centro da tela.
 
 </details><br>
+
+## 4. Gere `cores aleatórias` para sua paleta.
+
+<details>
+  <summary>
+  Usando manipulação do DOM, preencha aleatóriamente as cores para sua paleta.
+  </summary> <br />
+
+- As 3 primeiras cores devem ser preenchidas de forma aleatória.
+- A última cor deve ser sempre `preta`.
+- A paleta `não` pode possuir a cor branco absoluto. `rgb(255,255,255) ou #FFFFFF`.
+
+
+**O que será testado:**
+
+- As 3 primeiras cores devem ser aleatórias.
+- A última cor deve ser `preta`.
+- Nenhuma cor pode ser da cor branco absoluto.
+
+</details><br>
