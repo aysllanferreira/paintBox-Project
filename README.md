@@ -225,7 +225,7 @@ npx cypress run
 
 </details><br>
 
-## 9. Implemente uma lógica pra pintar o quadro.
+## 9. Implemente uma lógica pra pintar o `quadro`.
 
 <details>
   <summary>
@@ -238,5 +238,22 @@ npx cypress run
 **O que será testado:**
 
 - Ao selecionar uma cor e clicar no `quadro`, ele deve ser preenchido com a respectiva cor.
+
+</details><br>
+
+## 10. Salve a cor pintada no `quadro` no `LocalStorage`.
+
+<details>
+  <summary>
+  A cor que foi pintado no quadro, deve ser salva também no LocalStorage.
+  </summary> <br />
+
+- Salve a cor pintada no quadro no `localStorage` com a chave `board-color`.
+- Ao clicar no `quadro` e ele receber uma cor, ao recarregar a página a cor deve ser mantida.
+
+**O que será testado:**
+
+- A cor recebida pelo quadro deve ser salva no `localStorage` com a chave `board-color`.
+- Ao clicar no `quadro` e ele receber uma cor, ao recarregar a página a cor deve ser mantida.
 
 </details><br>
