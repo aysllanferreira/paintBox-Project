@@ -104,6 +104,9 @@ npx cypress run
 - Essas divs devem conter `50px de altura e largura`.
 - A segunda e a última div deve conter um `border-radius` de 50%.
 
+## Exemplo
+![Requisito 02](./readmeImg/Req02.png)
+
 </details><br>
 
 ## 3. Alinhe e centralize sua `Paleta`.
@@ -120,6 +123,9 @@ npx cypress run
 **O que será testado:**
 
 - Verificará se sua paleta está alinhada lado a lado e está no centro da tela.
+
+## Exemplo
+![Requisito 03](./readmeImg/Req03.png)
 
 </details><br>
 
@@ -140,6 +146,9 @@ npx cypress run
 - As 3 primeiras cores devem ser aleatórias.
 - A última cor deve ser `preta`.
 - Nenhuma cor pode ser da cor branco absoluto.
+
+## Exemplo
+![Requisito 04](./readmeImg/Req04.png)
 
 </details><br>
 
@@ -165,6 +174,9 @@ npx cypress run
 - A última cor deve permanecer `preta`.
 - Não será permitido as cores serem exatamentes as mesmas da paleta anterior.
 
+## Exemplo
+![Requisito 05](./readmeImg/Req05.png)
+
 </details><br>
 
 ## 6. Salve as cores da paleta no `LocalStorage`.
@@ -183,6 +195,9 @@ npx cypress run
 - Verificará se as cores foram salvas no `LocalStorage` com a chave `colors`
 - Verificará se ao recarregar a página, as cores vão permanecer as mesmas.
 - Verificará se ao clicar no botão gerará novas cores e ao recarregar a página, as cores vão se manter.
+
+## Exemplo
+![Requisito 06](./readmeImg/Req06.png)
 
 </details><br>
 
@@ -226,6 +241,9 @@ npx cypress run
 - A div deve ter 400px de `largura` e 200px de `altura`.
 - A div deve ter um background `branco` inicialmente.
 
+## Exemplo
+![Requisito 08](./readmeImg/Req08.png)
+
 </details><br>
 
 ## 9. Implemente uma lógica pra pintar o `quadro`.
@@ -241,6 +259,9 @@ npx cypress run
 **O que será testado:**
 
 - Ao selecionar uma cor e clicar no `quadro`, ele deve ser preenchido com a respectiva cor.
+
+## Exemplo
+![Requisito 09](./readmeImg/Req09.png)
 
 </details><br>
 
@@ -272,5 +293,8 @@ npx cypress run
 
 - Estilize o projeto.
 - Poste no seu LinkedIn ou GitHub! =D
+
+## Exemplo
+![Requisito 11](./readmeImg/Req11.png)
 
 </details><br>
