@@ -182,3 +182,23 @@ npx cypress run
 - Verificará se ao clicar no botão gerará novas cores e ao recarregar a página, as cores vão se manter.
 
 </details><br>
+
+## 7. Dê a classe `selected` para a cor selecionada.
+
+<details>
+  <summary>
+  Ao clicar em uma das cores da paleta, esse elemento deve receber a classe selected.
+  </summary> <br />
+
+- Por padrão, a primeira cor deve receber `selected` inicialmente.
+- Ao clicar em uma das cores, a cor que contem a classe `selected` deve ter essa classe removida.
+- Ao clicar em uma das cores, a nova cor clicada deve receber a classe `selected`.
+
+
+**O que será testado:**
+
+- A primeira cor inicialmente deve possuir a classe `selected`.
+- Ao clicar em uma cor, o elemento que tinha a classe `selected` deve perder a classe.
+- A cor clicada deve receber a classe `selected`.
+
+</details><br>
