@@ -76,3 +76,29 @@ npx cypress run
 - Sua página deve conter um elemento h1 com o texto Paint Box como filho do elemento header.
 
 </details><br>
+
+## 2. Crie os elementos de sua `Paleta de cores`.
+
+<details>
+  <summary>
+  Implemente sua página criando elementos que futuramente receberá 
+  </summary> <br />
+
+- Crie uma `div` que seja filhas do elemento com id: `app`.
+- Essa div deve conter o id: `pallete`.
+- Crie 4 `div` que sejam filhas do elemento que contenha o id `pallete`.
+- Essas divs devem conter a classe `color`.
+- Essas divs devem conter uma `borda solida preta de 1px`.
+- Essas divs devem conter `50px de altura`.
+- Essas divs devem conter `50px de largura`.
+- A segunda e a última div deve conter um `border-radius` de 50%.
+
+**O que será testado:**
+
+- Deverá conter uma `div` com o id `pallete` que seja filho do elemento `app`.
+- Deverá haver 4 divs com a classe `color`.
+- Elas devem ter uma `borda solida preta de 1px`.
+- Essas divs devem conter `50px de altura e largura`.
+- A segunda e a última div deve conter um `border-radius` de 50%.
+
+</details><br>
