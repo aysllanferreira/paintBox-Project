@@ -57,3 +57,22 @@ npx cypress run
 <br>
 
 # Requisitos Obrigatórios
+
+## 1. Implementa o `Header` de sua pagina.
+
+<details>
+  <summary>
+  Crie um Header para sua página.
+  </summary> <br />
+
+- Dentro da div com o ID: app, crie um `header`.
+- Dentro do seu header, crie um elemento com a tag `h1`.
+- O texto do seu H1 deve ser: `Paint Box`.
+
+**O que será testado:**
+
+- Sua página deve conter um elemento com a tag Header como filho da div com o id app.
+
+- Sua página deve conter um elemento h1 com o texto Paint Box como filho do elemento header.
+
+</details><br>
