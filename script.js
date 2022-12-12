@@ -16,6 +16,10 @@ const generatePallete = (div) => {
     createDiv.style.width = '50px';
     createDiv.style.height = '50px';
 
+    if (i === 0) {
+      createDiv.classList.add('selected');
+    }
+
     if (i % 2 === 1) {
       createDiv.style.borderRadius = '50%';
     }
@@ -37,6 +41,19 @@ const randomColour = () => {
   return `#${random}`;
 };
 
+const saveLocalStorage = (key, value) => {
+  localStorage.setItem(key, value);
+};
+
+const savePalleteLocalStorage = () => {
+  const pallete = document.querySelectorAll('.color');
+  const palleteArray = [];
+  for (let i = 0; i < pallete.length; i += 1) {
+    palleteArray.push(pallete[i].style.backgroundColor);
+  }
+  saveLocalStorage('colors', JSON.stringify(palleteArray));
+};
+
 const paintPallete = () => {
   const pallete = document.querySelectorAll('.color');
   for (let i = 0; i < pallete.length; i += 1) {
@@ -45,6 +62,23 @@ const paintPallete = () => {
     } else {
       pallete[i].style.backgroundColor = randomColour();
     }
+  }
+  savePalleteLocalStorage();
+};
+
+const paintPalleteStorage = () => {
+  const pallete = document.querySelectorAll('.color');
+  const palleteStorage = JSON.parse(localStorage.getItem('colors'));
+  for (let i = 0; i < pallete.length; i += 1) {
+    pallete[i].style.backgroundColor = palleteStorage[i];
+  }
+};
+
+const palleteLogicPaint = () => {
+  if (localStorage.getItem('colors') === null) {
+    paintPallete();
+  } else {
+    paintPalleteStorage();
   }
 };
 
@@ -59,12 +93,31 @@ const createtButton = () => {
   getApp.appendChild(createDiv);
 };
 
+const palleteSelectedClassToggle = (event) => {
+  const pallete = document.querySelectorAll('.color');
+  for (let i = 0; i < pallete.length; i += 1) {
+    if (pallete[i].classList.contains('selected')) {
+      pallete[i].classList.remove('selected');
+    }
+  }
+  event.target.classList.add('selected');
+};
+
+const palleteEventListeners = () => {
+  const pallete = document.querySelectorAll('.color');
+  for (let i = 0; i < pallete.length; i += 1) {
+    pallete[i].addEventListener('click', palleteSelectedClassToggle);
+  }
+};
+
 window.onload = () => {
   createHeader();
   createPallete();
-  paintPallete();
+  palleteLogicPaint();
   createtButton();
 
   const button = document.querySelector('#new-colors');
   button.addEventListener('click', paintPallete);
+
+  palleteEventListeners();
 };
