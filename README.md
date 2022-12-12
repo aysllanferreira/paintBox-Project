@@ -1,5 +1,5 @@
-# Boas-vindas ao repositório do exercício de Funções Javascript!
-Este projeto foi desenvolvido por Aysllan Ferreira, enquanto estudante na Trybe para servir como material de apoio para as pessoas estudantes se prepararem para o projeto Playground Functions.
+# Boas-vindas ao repositório do exercício de paintBox Project!
+Este projeto foi desenvolvido por Aysllan Ferreira, enquanto estudante na Trybe para servir como material de apoio para as pessoas estudantes se prepararem para o projeto Pixel Art.
 
 # Orientações
 	
