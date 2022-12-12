@@ -224,3 +224,19 @@ npx cypress run
 - A div deve ter um background `branco` inicialmente.
 
 </details><br>
+
+## 9. Implemente uma lógica pra pintar o quadro.
+
+<details>
+  <summary>
+  Com a cor selecionada, ao clicar no quadro, ele deve ser preenchido com essa cor.
+  </summary> <br />
+
+- Ao selecionar uma cor na palete e clicar no `quadro`, ele deve ser preenchido com a respectiva cor.
+- Ao selecionar outra cor e clicar no `quadro` ele deve ser preenchido com aquela nova cor.
+
+**O que será testado:**
+
+- Ao selecionar uma cor e clicar no `quadro`, ele deve ser preenchido com a respectiva cor.
+
+</details><br>
